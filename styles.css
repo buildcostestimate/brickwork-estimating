@@ -1,0 +1,469 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 150px;
+}
+
+.contact-info {
+    font-size: 0.9rem;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+.nav-links ul li a:hover {
+    color: #ffc107;
+}
+
+.nav-links.active {
+    display: block;
+}
+
+.hero {
+    background-image: url('Images/development.jpg');
+    /* Replace with a hero background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 18rem 1rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: .75rem;
+    margin-top: 8rem;
+}
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: .75rem;
+}
+
+
+.cta-button {
+    background-color: #ffc107;
+    color: #333;
+    padding: 0.55rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e0a800;
+}
+
+section {
+    padding: 4rem 1rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Services Section */
+.services {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.services h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.service-logo img {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.service-card ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#submit-plans form {
+    display: flex;
+    flex-direction: column;
+}
+
+#submit-plans form label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#submit-plans form input,
+#submit-plans form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#submit-plans form button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-plans form button:hover {
+    background-color: #555;
+}
+
+/* Project Showcase Section */
+.project-showcase {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.project-showcase h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 300px;
+    margin: 0 auto 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.project-card .view-more {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project-card .view-more:hover {
+    background-color: #555;
+}
+
+/* Our Customers Section */
+.our-customers {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.our-customers h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Scrollable customer logos container */
+.customer-logos {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 1rem 0;
+    gap: 1rem;
+    scrollbar-width: thin;
+    /* For Firefox */
+}
+
+.customer-logos a {
+    flex: 0 0 auto;
+    display: inline-block;
+    padding: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.customer-logos a:hover {
+    transform: scale(1.1);
+}
+
+/* Customer logo images styling */
+.customer-logos img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Hide scrollbar for webkit-based browsers */
+.customer-logos::-webkit-scrollbar {
+    display: none;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .customer-logos img {
+        height: 50px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e0a800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links.active ul {
+        display: flex;
+    }
+
+    .contact-info {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+/* Responsive Adjustments */
+@media (min-width: 600px) {
+
+    .service-card,
+    .project-card {
+        max-width: 280px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .service-card,
+    .project-card {
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .service-card,
+    .project-card {
+        max-width: 400px;
+    }
+}
+/* Hero Section with Band */
+.hero {
+    background: linear-gradient(120deg, #333, #555);
+    /* Dark gradient */
+    color: #fff;
+    padding: 8rem 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.15), transparent 70%);
+    transform: rotate(-15deg);
+    pointer-events: none;
+}
+
+/* Services Section with Band */
+.services {
+    background: linear-gradient(120deg, #f6f6f6, #eaeaea);
+    /* Light gray gradient */
+    padding: 4rem 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 40%, rgba(0, 0, 0, 0.05), transparent 80%);
+    pointer-events: none;
+}
+
+/* Project Showcase Section with Band */
+.project-showcase {
+    background: linear-gradient(120deg, #eeeeee, #cccccc);
+    /* Soft gray gradient */
+    padding: 4rem 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.07), transparent 70%);
+    transform: rotate(10deg);
+    pointer-events: none;
+}
+
+/* Section Titles */
+.hero h1,
+.services h2,
+.project-showcase h2 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+/* Responsive Adjustments for Larger Screens */
+@media (min-width: 992px) {
+
+    .hero,
+    .services,
+    .project-showcase {
+        padding: 6rem 2rem;
+    }
+
+    .hero h1,
+    .services h2,
+    .project-showcase h2 {
+        font-size: 3rem;
+    }
+}
